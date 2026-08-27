@@ -2,50 +2,80 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Integrador Frontend - Vinicius</title>
 </head>
 <body>
-    <h1>projeto integrador frontend vinicius </h1>
-      <p>criar um site de vendas relacionados a rpg de mesa </p>
-      <ul>
+  <header>
+    <h1>Projeto Integrador Frontend - Vinicius</h1>
+    <p>criar um site de vendas relacionados a rpg de mesa </p>
+</header>
+
+<main>
+    <ul>
         <li>ter uma lista de venda de livros</li>
         <li>ter uma lista relacionada a compra de miniaturas</li>
         <li>ter uma lista para se encontra uma mesa local</li>
       </ul>
-      <table> 
-        <thead>
+     <table>
+  <caption>Livros de RPG à venda</caption>
+  <thead>
     <tr>
-      <th>produto</th>
-      <th>preço do produto</th>
+      <th scope="col">Produto</th>
+      <th scope="col">Preço</th>
+      <th scope="col">Imagem</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>dungeons & dragons livro do jogador</td>
-      <td>169,99 R$</td>
-      <img src="https://sebodorpg.com.br/produtos/livro-do-jogador-dungeons-dragons-5-edicao-rpg/#product-gallery-1.jpg width="200" height="300" 
-     </tr>
-    <tr>
-      <td>pathfinder 2e livro do jogador</td>
-      <td>130,00 R$</td>
-      <img src="assets/images/717gf-2t8OL._SL1087_.jpg" width="200" height="300"> 
+      <td>Dungeons&amp;Dragons - Livro do jogador</td>
+      <td>R$ 169,99</td>
+      <td>
+        <img src="https://sebodorpg.com.br/produtos/livro-do-jogador-dungeons-dragons-5-edicao-rpg/#product-gallery-1.jpg"
+             width="200" height="300"
+             alt="Capa do livro do jogador de Dungeons&Dragons">
+      </td>
     </tr>
-    <h2>
-        <form action="/action_page.php">
-  <fieldset>
-    <legend>Personalia:</legend>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    </h2>
+    <tr>
+      <td>Pathfinder 2e - Livro do jogador</td>
+      <td>R$ 130,00</td>
+      <td>
+        <img src="assets/images/717gf-2t8OL._SL1087_.jpg"
+             width="200" height="300"
+             alt="Capa do livro do jogador de Pathfinder 2e">
+      </td>
+    </tr>
   </tbody>
-      </table>
-       <video> width="320" height="240" controls mute=true>
-  <source src="projeto-integrador-frontend-vinicius/assets/images/ WhatsApp Video 2026-08-27 at 09.36.08.mp4" type="video/mp4">
-  <source src="projeto-integrador-frontend-vinicius/assets/images/ WhatsApp Video 2026-08-27 at 09.36.08.ogg" type="video/ogg">
+</table>
+<section>
+  <h2 id="pedido-heading">junte-se a nós!</h2>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Junte-se a nós!</legend>
+      <div>
+        <label for="fname">Nome completo</label>
+        <input type="text" id="fname" name="fname" required minlength="3"
+               placeholder="Seu nome">
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required
+               placeholder="seu email">
+      </div>
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+</section>
+       <video width="320" height="240" controls muted>
+  <source src="projeto-integrador-frontend-vinicius/assets/images/teste.mp4" type="video/mp4">
+  <source src="projeto-integrador-frontend-vinicius/assets/images/teste.ogg" type="video/ogg">
    o seu browser não consegue carregar este arquivo.
      </video>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    </main>
+    <footer>
+  <p>Vinicius - testando</p>
+</footer>
 </body>
 </html>
